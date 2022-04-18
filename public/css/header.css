@@ -1,0 +1,113 @@
+header {
+	background-image: linear-gradient(to right top, #3a1c71, #642274, #862c75, #a33c75, #bc4f75, #cb5d75, #d86c75, #e47c76, #ec8876, #f49577, #faa278, #ffaf7b);
+	padding: 10px 0;
+}
+.custom-navbar{
+	padding: 0;
+	margin-top: 20px;
+}
+.top-header-logo h3 {
+	color: #fff;
+	padding: 0 15px;
+	font-weight: 600;
+	font-size: 25px;
+}
+.header-search {
+	position: relative;
+}
+.header-search input.form-control {
+	line-height: 23px;
+	height: 27px;
+	font-size: 12px;
+	font-weight: 600;
+	padding-left: 20px;
+	padding-right: 30px;
+	position: relative;
+	width: 100%;
+}
+.header-search input:focus {
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.header-search button {
+	position: absolute;
+	right: 0;
+	padding: 0;
+	text-align: center;
+	color: #62646a;
+	padding-right: 10px;
+}
+.top-header-icon {
+	text-align: right;
+}
+.top-header-icon .header-icon {
+	color: #fff;
+	margin-left: 20px;
+	position: relative;
+}
+.top-header-icon .header-icon:first-child {
+	margin-left: 0;
+}
+.top-header-icon .header-icon span {
+	height: 15px;
+	width: 15px;
+	background: #fff;
+	border-radius: 100px;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	font-size: 10px;
+	color: var(--header-bg);
+	text-align: center;
+}
+/*navbar*/
+.menu-link {
+	color: #fff !important;
+	padding: 0;
+	font-size: 14px;
+	margin-right: 40px;
+	position: relative;
+	display: inline-block;
+}
+.navbar-nav .nav-item:last-child .menu-link {
+	margin-right: 0;
+}
+.menu-link:before {
+    position: absolute;
+    left: 50%;
+    content: "";
+    bottom: 0;
+    width: 30%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+    background-color: #fff;
+}
+.navbar-nav .nav-item.active .menu-link:before, 
+.menu-link:hover:before {
+    transform: scaleX(1) translateX(-50%);
+    transform-origin: right;
+}
+
+
+
+@media (max-width:767px) {
+	.top-header-icon {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.custom-navbar {
+		border-top: 1px solid #fff;
+		padding-top: 20px;
+	}
+}
+
+
+
+ @media (max-width: 1200px) {
+ 	.menu-link {
+ 		margin-right: 20px;
+ 	}
+}
